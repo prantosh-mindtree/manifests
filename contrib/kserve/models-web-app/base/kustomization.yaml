@@ -18,3 +18,4 @@ configMapGenerator:
   - name: kserve-models-web-app-config
     literals:
     - APP_DISABLE_AUTH="True"
+    - APP_SECURE_COOKIES="false"
