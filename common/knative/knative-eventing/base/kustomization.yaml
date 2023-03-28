@@ -4,9 +4,9 @@ namespace: knative-eventing
 resources:
 - upstream/eventing-core.yaml 
 # Uncomment to install In-Memory Channels as messaging layer: 
-# - upstream/in-memory-channel.yaml
+- upstream/in-memory-channel.yaml
 # Uncomment to install MT-channel-based Broker layer
-# - upstream/mt-channel-broker.yaml
+- upstream/mt-channel-broker.yaml
 patchesStrategicMerge:
 - patches/clusterrole-patch.yaml
 commonLabels:
